@@ -1,21 +1,26 @@
-import { Menu } from "lucide-react";
+import { useState, useEffect } from "react";
 
 export const Taskbar = () => {
-  const currentTime = new Date().toLocaleTimeString('en-US', { 
-    hour: '2-digit', 
-    minute: '2-digit',
-    hour12: true 
-  });
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 h-10 bg-card window-border flex items-center px-1 gap-2 z-50">
-      <button className="window-border bg-button-face px-3 py-1 flex items-center gap-2 hover:bg-accent transition-colors">
-        <Menu className="w-4 h-4" />
-        <span className="font-pixel text-[10px]">START</span>
+    <div className="fixed bottom-0 left-0 right-0 h-12 bg-card window-border flex items-center px-2 gap-2 z-50">
+      <button className="window-border bg-button-face px-4 py-1 font-pixel text-xs hover:bg-accent transition-colors flex items-center gap-2">
+        <span className="text-base">⊞</span>
+        START
       </button>
-      <div className="flex-1" />
-      <div className="window-border-inset bg-input px-3 py-1">
-        <span className="font-retro text-sm">{currentTime}</span>
+      <div className="window-border-inset bg-input px-3 py-1 font-retro text-sm flex-1 ml-2">
+        Welcome to my website
+      </div>
+      <div className="window-border-inset bg-input px-3 py-1 font-retro text-sm">
+        {time.toLocaleTimeString()}
       </div>
     </div>
   );

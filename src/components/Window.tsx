@@ -6,9 +6,10 @@ interface WindowProps {
   children: ReactNode;
   className?: string;
   defaultMinimized?: boolean;
+  onClose?: () => void;
 }
 
-export const Window = ({ title, children, className = "", defaultMinimized = false }: WindowProps) => {
+export const Window = ({ title, children, className = "", defaultMinimized = false, onClose }: WindowProps) => {
   const [isMinimized, setIsMinimized] = useState(defaultMinimized);
 
   return (
@@ -25,7 +26,10 @@ export const Window = ({ title, children, className = "", defaultMinimized = fal
           <button className="window-border bg-button-face w-5 h-5 flex items-center justify-center hover:bg-accent transition-colors">
             <Square className="w-3 h-3" />
           </button>
-          <button className="window-border bg-button-face w-5 h-5 flex items-center justify-center hover:bg-destructive transition-colors">
+          <button 
+            onClick={onClose}
+            className="window-border bg-button-face w-5 h-5 flex items-center justify-center hover:bg-destructive transition-colors"
+          >
             <X className="w-3 h-3" />
           </button>
         </div>

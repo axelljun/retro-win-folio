@@ -8,8 +8,8 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Retro Windows color palette */
-    --background: 180 8% 52%;
+    /* Retro Windows color palette - Teal background */
+    --background: 180 60% 45%;
     --foreground: 0 0% 0%;
 
     --card: 0 0% 75%;
@@ -45,7 +45,7 @@ All colors MUST be HSL.
     --window-border-dark: 0 0% 25%;
     --title-bar: 180 100% 25%;
     --title-bar-inactive: 0 0% 50%;
-    --desktop-bg: 180 8% 52%;
+    --desktop-bg: 180 60% 45%;
     --button-face: 0 0% 75%;
     
     --sidebar-background: 0 0% 75%;
@@ -60,7 +60,7 @@ All colors MUST be HSL.
 
   .dark {
     /* Keep same retro theme for dark mode */
-    --background: 180 8% 52%;
+    --background: 180 60% 45%;
     --foreground: 0 0% 0%;
     --card: 0 0% 75%;
     --card-foreground: 0 0% 0%;
