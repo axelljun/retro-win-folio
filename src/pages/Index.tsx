@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { DesktopIcon } from "@/components/DesktopIcon";
 import { Window } from "@/components/Window";
+import aboutIcon from "@/assets/icon-about.png";
+import projectsIcon from "@/assets/icon-projects.png";
+import contactIcon from "@/assets/icon-contact.png";
+import resumeIcon from "@/assets/icon-resume.png";
 
 interface Project {
   id: string;
@@ -81,22 +85,22 @@ export default function Index() {
       {/* Desktop Icons */}
       <div className="fixed left-4 top-4 flex flex-col gap-4 z-10">
         <DesktopIcon
-          icon={<span className="text-4xl">👤</span>}
+          icon={<img src={aboutIcon} alt="About" className="w-10 h-10" />}
           label="About"
           onClick={() => openWindow("about")}
         />
         <DesktopIcon
-          icon={<span className="text-4xl">📁</span>}
+          icon={<img src={projectsIcon} alt="Projects" className="w-10 h-10" />}
           label="Projects"
           onClick={() => openWindow("projects")}
         />
         <DesktopIcon
-          icon={<span className="text-4xl">✉️</span>}
+          icon={<img src={contactIcon} alt="Contact" className="w-10 h-10" />}
           label="Contact"
           onClick={() => openWindow("contact")}
         />
         <DesktopIcon
-          icon={<span className="text-4xl">📄</span>}
+          icon={<img src={resumeIcon} alt="Resume" className="w-10 h-10" />}
           label="Resume"
           onClick={() => openWindow("resume")}
         />
