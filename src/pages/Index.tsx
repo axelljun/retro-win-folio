@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { DesktopIcon } from "@/components/DesktopIcon";
 import { Window } from "@/components/Window";
-import { User, FolderOpen, Mail, FileText } from "lucide-react";
 
 interface Project {
   id: string;
@@ -82,22 +81,22 @@ export default function Index() {
       {/* Desktop Icons */}
       <div className="fixed left-4 top-4 flex flex-col gap-4 z-10">
         <DesktopIcon
-          icon={<User className="w-8 h-8 text-primary" />}
+          icon={<span className="text-4xl">👤</span>}
           label="About"
           onClick={() => openWindow("about")}
         />
         <DesktopIcon
-          icon={<FolderOpen className="w-8 h-8 text-accent" />}
+          icon={<span className="text-4xl">📁</span>}
           label="Projects"
           onClick={() => openWindow("projects")}
         />
         <DesktopIcon
-          icon={<Mail className="w-8 h-8 text-destructive" />}
+          icon={<span className="text-4xl">✉️</span>}
           label="Contact"
           onClick={() => openWindow("contact")}
         />
         <DesktopIcon
-          icon={<FileText className="w-8 h-8 text-muted-foreground" />}
+          icon={<span className="text-4xl">📄</span>}
           label="Resume"
           onClick={() => openWindow("resume")}
         />
