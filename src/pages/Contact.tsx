@@ -7,10 +7,10 @@ export const Contact = () => {
           <div>
             <p className="font-pixel text-xs mb-2 text-muted-foreground">EMAIL:</p>
             <a 
-              href="mailto:axell@stanford.edu" 
+              href="mailto:axel.ljunggren@gmail.com" 
               className="font-retro text-base hover:text-primary transition-colors"
             >
-              axell@stanford.edu
+              axel.ljunggren@gmail.com
             </a>
           </div>
           <div>
@@ -25,15 +25,19 @@ export const Contact = () => {
             </a>
           </div>
           <div>
-            <p className="font-pixel text-xs mb-2 text-muted-foreground">GITHUB:</p>
+            <p className="font-pixel text-xs mb-2 text-muted-foreground">WEBSITE:</p>
             <a 
-              href="https://github.com/axelljunggren" 
+              href="http://www.axelljunggren.com" 
               target="_blank" 
               rel="noopener noreferrer"
               className="font-retro text-base hover:text-primary transition-colors"
             >
-              github.com/axelljunggren
+              www.axelljunggren.com
             </a>
+          </div>
+          <div>
+            <p className="font-pixel text-xs mb-2 text-muted-foreground">LOCATION:</p>
+            <p className="font-retro text-base">San Francisco Bay Area</p>
           </div>
         </div>
       </div>

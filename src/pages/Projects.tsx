@@ -30,34 +30,29 @@ const ProjectPreview = ({ id, title, year, image }: ProjectPreviewProps) => {
 export const Projects = () => {
   const projects = [
     {
+      id: "miniature-turbojet",
+      title: "MINIATURE TURBOJET ENGINE",
+      year: "2024 - Present"
+    },
+    {
+      id: "pinpoint-app",
+      title: "PINPOINT - HISTORICAL SITES APP",
+      year: "2024 - Present"
+    },
+    {
+      id: "wearable-charger",
+      title: "WEARABLE CHARGER DESIGN",
+      year: "2023"
+    },
+    {
+      id: "moped-restoration-electrification",
+      title: "MOPED RESTORATION & ELECTRIFICATION",
+      year: "2022 - 2023"
+    },
+    {
       id: "terabase-internship",
-      title: "TERABASE SUMMER INTERNSHIP",
+      title: "TERABASE ENERGY INTERNSHIP",
       year: "2023"
-    },
-    {
-      id: "moped-electrification",
-      title: "MOPED ELECTRIFICATION",
-      year: "2023"
-    },
-    {
-      id: "product-design-course",
-      title: "PRODUCT DESIGN COURSE",
-      year: "2023"
-    },
-    {
-      id: "moped-restoration",
-      title: "MOPED RESTORATION",
-      year: "2022"
-    },
-    {
-      id: "quick-mount-winch",
-      title: "QUICK-MOUNT WINCH",
-      year: "2023"
-    },
-    {
-      id: "water-pump",
-      title: "WATER PUMP",
-      year: "2022"
     }
   ];
 
