@@ -18,7 +18,7 @@ export const Taskbar = () => {
         MENU
       </button>
       <div className="window-border-inset bg-input px-3 py-1 font-retro text-sm flex-1 ml-2">
-        www.axelljunggren.com
+        www.axeljunggren.com
       </div>
       <div className="window-border-inset bg-input px-3 py-1 font-retro text-sm">
         {time.toLocaleTimeString()}

@@ -16,23 +16,23 @@ export const Contact = () => {
           <div>
             <p className="font-pixel text-xs mb-2 text-muted-foreground">LINKEDIN:</p>
             <a 
-              href="https://linkedin.com/in/axelljunggren" 
+              href="https://linkedin.com/in/axeljunggren" 
               target="_blank" 
               rel="noopener noreferrer"
               className="font-retro text-base hover:text-primary transition-colors"
             >
-              linkedin.com/in/axelljunggren
+              linkedin.com/in/axeljunggren
             </a>
           </div>
           <div>
             <p className="font-pixel text-xs mb-2 text-muted-foreground">WEBSITE:</p>
             <a 
-              href="http://www.axelljunggren.com" 
+              href="http://www.axeljunggren.com" 
               target="_blank" 
               rel="noopener noreferrer"
               className="font-retro text-base hover:text-primary transition-colors"
             >
-              www.axelljunggren.com
+              www.axeljunggren.com
             </a>
           </div>
           <div>
